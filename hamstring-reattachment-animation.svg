@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">Simplified animation of proximal hamstring reattachment surgery</title>
+  <desc id="description">A five-step educational animation showing avulsed proximal hamstring tendons, preparation of the attachment footprint on the ischial tuberosity, placement of suture anchors, sutures passed through the tendons, and the tendons secured back to bone.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2030"/>
+      <stop offset="1" stop-color="#153d47"/>
+    </linearGradient>
+    <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0d1"/>
+      <stop offset="1" stop-color="#d9bb82"/>
+    </linearGradient>
+    <linearGradient id="tendon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9f1e6"/>
+      <stop offset="1" stop-color="#44b8ad"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#031017" flood-opacity=".35"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .step { font-size: 22px; font-weight: 800; letter-spacing: .12em; fill: #f7b26a; }
+      .heading { font-size: 42px; font-weight: 800; fill: #ffffff; }
+      .copy { font-size: 24px; fill: #d4e7e9; }
+      .label { font-size: 20px; font-weight: 700; fill: #ffffff; }
+      .fine { font-size: 17px; fill: #a9c3c7; }
+      .suture { fill: none; stroke: #ff806c; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .leader { fill: none; stroke: #9fbdc2; stroke-width: 2; stroke-dasharray: 5 7; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <path d="M0 650 C220 590 385 710 590 650 S960 585 1200 670 V800 H0Z" fill="#061925" opacity=".48"/>
+
+  <text x="70" y="70" font-size="18" font-weight="800" letter-spacing=".18em" fill="#7fd7cf">PROXIMAL HAMSTRING REPAIR</text>
+  <text x="70" y="112" font-size="25" font-weight="650" fill="#ffffff">A simplified view from behind</text>
+
+  <!-- Stable anatomy: pelvis, ischial tuberosity and thigh -->
+  <g filter="url(#shadow)">
+    <path d="M745 108 C850 92 1001 121 1051 216 C1087 285 1054 367 990 401 C933 431 872 409 830 368 C791 330 754 307 704 300 C660 294 627 264 636 217 C645 170 686 118 745 108Z" fill="url(#bone)" stroke="#c7a667" stroke-width="5"/>
+    <path d="M699 268 C748 264 802 283 829 322 C843 343 828 371 798 381 C757 394 695 373 672 339 C651 307 666 273 699 268Z" fill="#f9dfad" stroke="#c7a667" stroke-width="5"/>
+    <path d="M825 375 C875 411 900 468 903 579 C905 651 885 708 850 733 L684 733 C650 684 641 624 651 550 C663 462 705 403 762 375Z" fill="#bb7467" opacity=".32"/>
+  </g>
+  <ellipse cx="752" cy="352" rx="75" ry="39" fill="#e88e65" opacity=".2"/>
+  <text x="940" y="331" class="label">Pelvis</text>
+  <path d="M925 337 L864 302" class="leader"/>
+  <text x="922" y="378" class="label">Attachment footprint</text>
+  <path d="M904 384 L806 359" class="leader"/>
+
+  <!-- Step 1 -->
+  <g>
+    <animate attributeName="opacity" values="1;0;0;0;0" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="15s" repeatCount="indefinite"/>
+    <text x="70" y="191" class="step">STEP 1 OF 5</text>
+    <text x="70" y="244" class="heading">The tendons are detached</text>
+    <text x="70" y="287" class="copy">The three hamstring tendons have pulled</text>
+    <text x="70" y="320" class="copy">away from their origin on the pelvis.</text>
+    <g transform="translate(0 92)">
+      <path d="M530 710 C527 611 541 531 575 467 C598 424 633 392 683 371" fill="none" stroke="url(#tendon)" stroke-width="31" stroke-linecap="round"/>
+      <path d="M618 716 C605 620 608 535 631 477 C647 435 671 406 710 390" fill="none" stroke="url(#tendon)" stroke-width="30" stroke-linecap="round"/>
+      <path d="M704 716 C686 620 683 545 696 492 C707 446 724 419 747 403" fill="none" stroke="url(#tendon)" stroke-width="29" stroke-linecap="round"/>
+      <path d="M669 368 Q690 355 713 369 M695 389 Q716 377 737 392 M733 404 Q751 393 769 407" fill="none" stroke="#f4c9aa" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <path d="M688 464 C660 434 654 408 677 388" fill="none" stroke="#f7b26a" stroke-width="3" stroke-dasharray="7 8"/>
+    <text x="389" y="443" class="label">Retracted tendon ends</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g>
+    <animate attributeName="opacity" values="0;1;0;0;0" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="15s" repeatCount="indefinite"/>
+    <text x="70" y="191" class="step">STEP 2 OF 5</text>
+    <text x="70" y="244" class="heading">The footprint is prepared</text>
+    <text x="70" y="287" class="copy">The surgeon exposes the tendon origin</text>
+    <text x="70" y="320" class="copy">and prepares the bone for reattachment.</text>
+    <ellipse cx="754" cy="354" rx="67" ry="30" fill="#ffd37f" opacity=".75" filter="url(#glow)"/>
+    <ellipse cx="754" cy="354" rx="67" ry="30" fill="none" stroke="#fff3bb" stroke-width="5" stroke-dasharray="9 8"/>
+    <g transform="translate(0 92)" opacity=".76">
+      <path d="M530 710 C527 611 541 531 575 467 C598 424 633 392 683 371" fill="none" stroke="url(#tendon)" stroke-width="31" stroke-linecap="round"/>
+      <path d="M618 716 C605 620 608 535 631 477 C647 435 671 406 710 390" fill="none" stroke="url(#tendon)" stroke-width="30" stroke-linecap="round"/>
+      <path d="M704 716 C686 620 683 545 696 492 C707 446 724 419 747 403" fill="none" stroke="url(#tendon)" stroke-width="29" stroke-linecap="round"/>
+    </g>
+    <text x="408" y="389" class="label">Prepared bone surface</text>
+    <path d="M612 383 L690 361" class="leader"/>
+  </g>
+
+  <!-- Step 3 -->
+  <g>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="15s" repeatCount="indefinite"/>
+    <text x="70" y="191" class="step">STEP 3 OF 5</text>
+    <text x="70" y="244" class="heading">Anchors and sutures are placed</text>
+    <text x="70" y="287" class="copy">Anchors sit in the bone. Their sutures</text>
+    <text x="70" y="320" class="copy">are passed securely through the tendons.</text>
+    <g fill="#f7b26a" stroke="#fff0c8" stroke-width="3">
+      <path d="M712 343 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M750 350 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M787 356 l12 -17 l12 17 l-12 21Z"/>
+    </g>
+    <g transform="translate(0 92)">
+      <path d="M530 710 C527 611 541 531 575 467 C598 424 633 392 683 371" fill="none" stroke="url(#tendon)" stroke-width="31" stroke-linecap="round"/>
+      <path d="M618 716 C605 620 608 535 631 477 C647 435 671 406 710 390" fill="none" stroke="url(#tendon)" stroke-width="30" stroke-linecap="round"/>
+      <path d="M704 716 C686 620 683 545 696 492 C707 446 724 419 747 403" fill="none" stroke="url(#tendon)" stroke-width="29" stroke-linecap="round"/>
+    </g>
+    <path d="M724 351 C705 385 701 428 699 468 C682 492 661 485 660 459 C660 431 677 420 697 432" class="suture"/>
+    <path d="M762 358 C747 397 739 435 733 480 C718 504 696 496 696 471 C696 445 713 433 735 445" class="suture"/>
+    <path d="M799 363 C783 408 773 446 768 495 C754 517 733 508 733 484 C733 458 749 447 771 459" class="suture"/>
+    <text x="414" y="403" class="label">Suture anchors</text>
+    <path d="M584 397 L712 349" class="leader"/>
+  </g>
+
+  <!-- Step 4 -->
+  <g>
+    <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="15s" repeatCount="indefinite"/>
+    <text x="70" y="191" class="step">STEP 4 OF 5</text>
+    <text x="70" y="244" class="heading">The tendons are drawn home</text>
+    <text x="70" y="287" class="copy">Tension on the sutures brings the tendon</text>
+    <text x="70" y="320" class="copy">ends back onto their original footprint.</text>
+    <g fill="#f7b26a" stroke="#fff0c8" stroke-width="3">
+      <path d="M712 343 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M750 350 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M787 356 l12 -17 l12 17 l-12 21Z"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 88;0 88;0 88;0 88;0 0;0 0" keyTimes="0;.59;.6;.62;.78;1" dur="15s" repeatCount="indefinite"/>
+      <path d="M530 710 C527 611 541 531 575 467 C598 424 633 392 683 371" fill="none" stroke="url(#tendon)" stroke-width="31" stroke-linecap="round"/>
+      <path d="M618 716 C605 620 608 535 631 477 C647 435 671 406 710 390" fill="none" stroke="url(#tendon)" stroke-width="30" stroke-linecap="round"/>
+      <path d="M704 716 C686 620 683 545 696 492 C707 446 724 419 747 403" fill="none" stroke="url(#tendon)" stroke-width="29" stroke-linecap="round"/>
+    </g>
+    <path d="M724 351 Q705 383 686 402 M762 358 Q745 390 711 420 M799 363 Q785 398 750 433" class="suture"/>
+    <g fill="#f7b26a">
+      <path d="M649 442 l22 -2 l-9 -20Z"/>
+      <path d="M689 454 l22 -3 l-10 -19Z"/>
+      <path d="M728 468 l22 -3 l-10 -19Z"/>
+    </g>
+    <text x="412" y="430" class="label">Sutures pull upward</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g>
+    <animate attributeName="opacity" values="0;0;0;0;1" keyTimes="0;.2;.4;.6;.8" calcMode="discrete" dur="15s" repeatCount="indefinite"/>
+    <text x="70" y="191" class="step">STEP 5 OF 5</text>
+    <text x="70" y="244" class="heading">The repair is secured</text>
+    <text x="70" y="287" class="copy">The sutures hold the tendons against bone</text>
+    <text x="70" y="320" class="copy">while protected tendon-to-bone healing begins.</text>
+    <ellipse cx="752" cy="363" rx="83" ry="48" fill="#79d9c9" opacity=".18" filter="url(#glow)"/>
+    <path d="M530 710 C527 611 541 531 575 467 C598 424 633 392 683 371" fill="none" stroke="url(#tendon)" stroke-width="31" stroke-linecap="round"/>
+    <path d="M618 716 C605 620 608 535 631 477 C647 435 671 406 710 390" fill="none" stroke="url(#tendon)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M704 716 C686 620 683 545 696 492 C707 446 724 419 747 403" fill="none" stroke="url(#tendon)" stroke-width="29" stroke-linecap="round"/>
+    <g fill="#f7b26a" stroke="#fff0c8" stroke-width="3">
+      <path d="M712 343 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M750 350 l12 -17 l12 17 l-12 21Z"/>
+      <path d="M787 356 l12 -17 l12 17 l-12 21Z"/>
+    </g>
+    <path d="M724 351 Q712 363 684 374 M762 358 Q742 373 711 391 M799 363 Q780 383 747 404" class="suture"/>
+    <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+      <path d="M697 375 l9 9 l19 -23"/>
+      <path d="M731 393 l9 9 l19 -23"/>
+      <path d="M768 408 l9 9 l19 -23"/>
+    </g>
+    <text x="419" y="397" class="label">Tendons back on bone</text>
+    <path d="M622 391 L680 374" class="leader"/>
+  </g>
+
+  <!-- Progress rail -->
+  <g transform="translate(70 686)">
+    <rect x="0" y="0" width="465" height="6" rx="3" fill="#496772"/>
+    <rect x="0" y="0" width="465" height="6" rx="3" fill="#7fd7cf">
+      <animate attributeName="width" values="0;465" dur="15s" repeatCount="indefinite"/>
+    </rect>
+    <g fill="#f7b26a" stroke="#0b2030" stroke-width="5">
+      <circle cx="0" cy="3" r="10"/><circle cx="116" cy="3" r="10"/><circle cx="232" cy="3" r="10"/><circle cx="349" cy="3" r="10"/><circle cx="465" cy="3" r="10"/>
+    </g>
+  </g>
+
+  <text x="70" y="753" class="fine">Educational illustration only. Surgical approach, anchor count and suture pattern can vary.</text>
+  <text x="1130" y="753" text-anchor="end" class="fine">Loops every 15 seconds</text>
+</svg>
